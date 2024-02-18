@@ -1,0 +1,186 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100;400;700&family=Rubik+Bubbles&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Anton", sans-serif;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+.container h1 {
+  font-size: 40px;
+  padding-top: 20px;
+}
+.mistake {
+  text-align: end;
+}
+
+.timer {
+  width: 60vmin;
+  margin: 8px auto;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.t {
+  padding: 10px;
+  border-radius: 10px;
+  margin: auto;
+  background-color: rgba(209, 209, 209, 0.493);
+}
+.mis {
+  width: 60vmin;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+#gameBoard {
+  height: 60vmin;
+  width: 60vmin;
+  background: #fff;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  border: 3px solid #000;
+}
+.tile {
+  height: calc(100% / 9);
+  width: calc(100% / 9);
+  border: 1px solid #ccc;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+.filled {
+  background: #f2f2f2;
+}
+.select-tile {
+  background: rgba(82, 81, 83, 0.577);
+}
+#digits {
+  width: 60vmin;
+  display: flex;
+  margin: 20px auto;
+}
+#digits .tile {
+  background: #3e3e3baf;
+  border-radius: 10px;
+  border: 1px solid #000;
+  color: #fff;
+  cursor: pointer;
+}
+.border-right {
+  border-right: 2px solid #000;
+}
+.border-bottom {
+  border-bottom: 2px solid #000;
+}
+#delete {
+  color: #f00;
+  font-size: 30px;
+  cursor: pointer;
+}
+.danger {
+  color: #f00;
+}
+@media (max-width: 600px) {
+  .tile {
+    font-size: 18px;
+  }
+}
+@media (max-width: 400px) {
+  .tile {
+    font-size: 16px;
+  }
+}

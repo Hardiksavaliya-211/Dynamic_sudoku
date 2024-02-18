@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sudoku</h1>
+      <hr>
+      <div class="timer">
+        <div class="t">
+            <span id="hour">00</span>:<span id="minite">00</span>:<span id="second">00</span>
+        </div>
+      </div>
+      <div id="gameBoard"></div>
+      <div class="mis">
+
+          <div class="mistake">Mistake: <span id="mistake">0</span>/3</div>
+      </div>
+      <div id="digits"></div>
+      <div id="delete">
+        <i class="fa fa-trash"></i>
+      </div>
+    </div>
+    <script src="sudoku.js"></script>
+
+  </body>
+</html>
