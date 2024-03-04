@@ -124,13 +124,26 @@ body {
   font-weight: 700;
 }
 #gameBoard {
-  height: 60vmin;
-  width: 60vmin;
+  height: 75vmin;
+  width: 75vmin;
   background: #fff;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   border: 3px solid #000;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #gameBoard{
+    height: 50vmin;
+    width: 50vmin;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #gameBoard{
+    height: 50vmin;
+    width: 50vmin;
+  }
 }
 .tile {
   height: calc(100% / 9);
@@ -149,7 +162,7 @@ body {
   background: rgba(82, 81, 83, 0.577);
 }
 #digits {
-  width: 60vmin;
+  width: 70vmin;
   display: flex;
   margin: 20px auto;
 }
@@ -176,11 +189,15 @@ body {
 }
 @media (max-width: 600px) {
   .tile {
-    font-size: 18px;
+    font-size: 20px;
+  }
+  #gameBoard{
+    height: 50vmin;
+    width: 50vmin;
   }
 }
 @media (max-width: 400px) {
   .tile {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
